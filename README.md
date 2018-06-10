@@ -1,4 +1,4 @@
-masu-mi.util
+masu_mi.util
 =========
 
 This role contains util tasks in order to be used by `include_role`.
