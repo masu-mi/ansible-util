@@ -40,4 +40,4 @@ BSD
 Author Information
 ------------------
 
-[Masumi KANAI](masumi.net@gmail.com)
+* Masumi Kanai(masumi.net@gmail.com)
