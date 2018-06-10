@@ -1,0 +1,15 @@
+:--
+- shell: sleep 2 && shutdown -r now "ansible reboot"
+  async: 1
+  poll: 0
+  changed_when: true
+- name: wait to reboot completely
+  local_acction: wait_for
+  args:
+    host: "{{ ansible_host | default(inventory_hostname) }}"
+    port: "{{ ansible_port | default(22) }}"
+    state: started
+    search_regex: OpenSSH
+    delay: 30
+    timeout: 600
+  become: false
